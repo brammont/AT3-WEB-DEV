@@ -1,0 +1,102 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    background-color: #BDD3EF;
+    color: #107CF1;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #107CF1;
+    color: #BDD3EF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hotspot {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hotspot a {
+    color: #107CF1;
+    text-decoration: none;
+}
+.carousel {
+    margin-bottom: 20px;
+}
+.carousel-item {
+    display: none;
+    padding: 20px;
+}
+.carousel-item:first-child {
+    display: block;
+}
+.learn-more {
+    color: #107CF1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Map section styles */
+.map {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #107CF1;
+    color: #BDD3EF;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media only screen and (min-width: 768px) {
+    /* Medium screens */
+    .hero {
+        height: 400px;
+    }
+    .carousel {
+        display: flex;
+        justify-content: space-between;
+    }
+    .carousel-item {
+        display: block;
+        flex: 0 0 30%; /* Adjust width as needed */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Large screens */
+    .hero {
+        height: 600px;
+    }
+    .carousel-item {
+        flex: 0 0 25%; /* Adjust width as needed */
+    }
+}
