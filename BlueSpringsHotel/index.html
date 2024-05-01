@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Springs Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Blue Springs Hotel</h1>
+        <p>Your ultimate destination for relaxation and luxury</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <!-- Hero image with interactive hotspots -->
+            <img src="hero-image.jpg" alt="Blue Springs Hotel">
+            <div class="hotspot" id="spa-hotspot">
+                <a href="spa.html">Spa</a>
+            </div>
+            <div class="hotspot" id="pool-hotspot">
+                <a href="pool.html">Pool</a>
+            </div>
+            <div class="hotspot" id="restaurant-hotspot">
+                <a href="restaurant.html">Restaurant</a>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <!-- Carousel displaying snippets of content -->
+            <div class="carousel-item">
+                <h2>Experience Luxury Spa Treatments</h2>
+                <p>Indulge in our rejuvenating spa services designed to melt away stress.</p>
+                <a href="spa.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="carousel-item">
+                <h2>Dine in Style at Our Restaurant</h2>
+                <p>Savor exquisite cuisine prepared by our world-class chefs in a stunning setting.</p>
+                <a href="restaurant.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="carousel-item">
+                <h2>Relax by the Crystal Clear Pool</h2>
+                <p>Take a refreshing dip or lounge poolside amidst breathtaking views.</p>
+                <a href="pool.html" class="learn-more">Learn More</a>
+            </div>
+        </section>
+
+        <section class="map">
+            <!-- Visual map of hotel grounds with clickable areas -->
+            <img src="hotel-map.jpg" alt="Hotel Map" usemap="#hotel-map">
+            <map name="hotel-map">
+                <area shape="rect" coords="0,0,200,200" href="rooms.html" alt="Rooms">
+                <area shape="circle" coords="300,300,100" href="restaurant.html" alt="Restaurant">
+                <area shape="poly" coords="500,500,600,600,500,700" href="activities.html" alt="Activities">
+            </map>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+        <p>&copy; 2024 Blue Springs Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
