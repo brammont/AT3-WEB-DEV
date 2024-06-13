@@ -69,3 +69,46 @@ body {
     background: rgb(245,245,245);
     background: linear-gradient(180deg, rgba(245,245,245,1) 10%, rgba(255,255,255,1) 100%);
   }
+  .contact{
+    background-color: white;
+  }
+  .container-form {
+    margin: 0 auto; /* Center the form */
+    width: 100%; /* Set width to 100% */
+  }
+  
+  /* Style the form group */
+  .form-group {
+    margin-bottom: 1rem; /* Add some margin */
+  }
+  
+  /* Style the input fields */
+  .form-control {
+    display: block; /* Make inputs take up full width */
+    width: 100%;
+    padding: 1rem 1rem; /* Add padding */
+    margin: 1rem 1rem;
+    font-size: 1rem; /* Set font size */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: .25rem; /* Add rounded corners */
+  }
+  
+  /* Style the text area */
+  .form-control:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #86b7fe; /* Change border color on focus */
+  }
+  
+  /* Style the submit button using Bootstrap classes */
+  .btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: .25rem; /* Add rounded corners */
+  }
+  
+  /* Add hover effect for button */
+  .btn-primary:hover {
+    background-color: #0069d9; /* Change color on hover */
+  }
+  
