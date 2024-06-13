@@ -111,7 +111,7 @@ body {
   .btn-primary:hover {
     background-color: #0069d9; /* Change color on hover */
   }
-  .staff{
+  .staff, .aboriginal, .cossack, .thingstodo{
     background: rgb(51,51,51);
     background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgba(245,245,245,1) 50%, rgba(255,255,255,1) 100%); 
   }
