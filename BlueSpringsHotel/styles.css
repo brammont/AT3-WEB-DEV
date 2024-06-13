@@ -1,102 +1,62 @@
-/* Reset default margin and padding */
-* {
+/* Apply Merriweather to body text by default */
+body {
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: 'Roboto', sans-serif; /* Google Font */
-    background-color: #BDD3EF;
-    color: #107CF1;
-    line-height: 1.6;
-}
-
-/* Header styles */
-header {
-    background-color: #107CF1;
-    color: #BDD3EF;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Main styles */
-main {
-    padding: 20px;
-}
-
-/* Hero section styles */
-.hero {
+  }
+  
+  /* Apply Playfair Display to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Additional styles for the hero section */
+  .hero {
     position: relative;
-    margin-bottom: 20px;
-}
-.hero img {
+    overflow: hidden;
     width: 100%;
-    height: auto;
-}
-.hotspot {
+    height: 100vh; /* Full viewport height */
+    color: white;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text alignment */
+  }
+  
+  .video-container {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.hotspot a {
-    color: #107CF1;
-    text-decoration: none;
-}
-.carousel {
-    margin-bottom: 20px;
-}
-.carousel-item {
-    display: none;
-    padding: 20px;
-}
-.carousel-item:first-child {
-    display: block;
-}
-.learn-more {
-    color: #107CF1;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Map section styles */
-.map {
-    margin-bottom: 20px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #107CF1;
-    color: #BDD3EF;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-/* Responsive styles */
-@media only screen and (min-width: 768px) {
-    /* Medium screens */
-    .hero {
-        height: 400px;
-    }
-    .carousel {
-        display: flex;
-        justify-content: space-between;
-    }
-    .carousel-item {
-        display: block;
-        flex: 0 0 30%; /* Adjust width as needed */
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    /* Large screens */
-    .hero {
-        height: 600px;
-    }
-    .carousel-item {
-        flex: 0 0 25%; /* Adjust width as needed */
-    }
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video stays behind the content */
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 1; /* Ensure the text is above the video */
+    padding: 0 1rem; /* Optional: add padding for text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+  }
+  
+  .hero h1, .hero p, .hero a {
+    color: white; /* Text color over the video */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
