@@ -65,3 +65,7 @@ body {
     background: rgb(51,51,51);
     background: linear-gradient(180deg, rgba(51,51,51,1) 10%, rgba(245,245,245,1) 100%);
   }
+  .events{
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 10%, rgba(255,255,255,1) 100%);
+  }
