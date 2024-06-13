@@ -31,6 +31,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -1; /* Ensure the video stays behind the content */
+    opacity: 5;
   }
   
   .video-container video {
@@ -59,4 +60,8 @@ body {
   
   .hero p {
     font-size: 1.25rem;
+  }
+  .services {
+    background: rgb(51,51,51);
+    background: linear-gradient(180deg, rgba(51,51,51,1) 10%, rgba(245,245,245,1) 100%);
   }
