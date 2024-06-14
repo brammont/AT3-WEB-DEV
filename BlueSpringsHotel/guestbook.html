@@ -49,50 +49,74 @@
     <header class="hero">
         <div class="video-container">
           <video muted autoplay loop>
-            <source src="assets/video/acknowladge.mp4" type="video/mp4">
+            <source src="assets/video/indexHero.mp4" type="video/mp4">
           </video>
         </div>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-12">                
-                <h1 class="display-1 text-white">Acknowledgement of Country </h1>
-                <p class="lead text-white">In the Acknowledgment  of Country, we respectfully recognize and pay tribute to the Ngarluma people, the traditional custodians of this land.</p>
+                <h1 class="display-1 text-white">Guestbook </h1>
+                <p class="lead text-white">Review Form: Share your experience at Blue Springs Hotel. Fill out the form below to leave a review.</p>
                 
             </div>
           </div>
         </div>
-    </header>
-    <section class="aboriginal">
+    </header>    
+    
+    <section class="review">
         <div class="container">
-            <div class="row p-4">                
-                <div class="col-md-6">
-                    <article class="bg-white p-3">
-                        <h2>Acknowledgement of Country</h2>
-                        <p>
-                            We acknowledge the Traditional Owners of the land on which we work and live. We pay our respects to Elders past, present, and emerging, and recognize their continuing connection to the land, waters, and community. This land always was and always will be Aboriginal land.
-                        </p>
-                    </article>
-                    <a href="https://www.youtube.com/watch?v=GwMnd8p-Tfc&t=1s" target="_blank">
-                        <img class="d-block w-100 shadow-lg p-3 mb-5 bg-body rounded" src="assets/images/ngarluma.png" alt="Youtube Video">
-                        <p><small>Go to Youtube Channel.</small></p>                       
-                    </a>
-                </div> 
-                <div class="col-md-6">
-                    <div class="card">
-                        <img src="assets/images/ngarlumaFoundation.png" class="card-img-top img-fluid" alt="Aboriginal Cultural Experience">
-                        <div class="card-body">
-                            <h5 class="card-title">Michael Thompson - Front Office Manager</h5>
-                            <p class="card-text">The Ngarluma Foundation is an Indigenous Australian organisation aiming to empower the Ngarluma people through cultural preservation, education, and land management initiatives.</p>
-                            <p class="card-text">They work to protect the Ngarluma heritage and country, while fostering a sustainable future for the Ngarluma community. Their efforts include cultural education programs, land and sea management projects, and advocating for Ngarluma rights and interests.</p>
-                            <a href="https://www.ngarluma.com.au/"><button  type="button" class="btn btn-light">Go Ngarluma web palce</button></a>
-                        </div>
-                    </div>
+            <h3 class="display-3 text-center text-white">Review</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">CITY</th>
+                            <th scope="col">COMMENT</th>
+                          </tr>
+                        </thead>
+                        <tbody id="commentsTableBody">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Sam Jhonson</td>
+                            <td>Perth, Australia</td>
+                            <td>Exceptional culinary experience, serene spa retreat, and unforgettable cultural immersion. Perfect stay!</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Maria Strwwert</td>
+                            <td>Melbourne, Australia</td>
+                            <td>Immersive Aboriginal culture, breathtaking sunset cruise, and rejuvenating spa retreat. Memorable moments!</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Kevin Smith</td>
+                            <td>Sydney, Australia</td>
+                            <td>Delightful culinary class, adventurous outdoor excursion, and tranquil spa escape. Unforgettable memories made!</td>
+                          </tr>                              
+                        </tbody>
+                    </table>
                 </div>
-                           
-            </div>                
+                <div class="col-sm-6">
+                    <div class="container-form">
+                        <form id="commentForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nameInput" placeholder="Name" required>
+                                <input type="text" class="form-control" id="cityInput" placeholder="City" required>
+                                <textarea class="form-control" id="commentInput" rows="3" placeholder="Write a comment" required></textarea>
+                            </div>                           
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>                        
+                </div>
+            </div>
         </div>
-    </section>    
-       
+    </section>
+    <!-- Link to external JavaScript file -->
+    <script src="main.js"></script>
+    
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <ul class="nav col-md-4 justify-content-end">
